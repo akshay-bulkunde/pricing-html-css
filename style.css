@@ -1,0 +1,94 @@
+body{
+    background-color: #4076D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.pricing{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 800px;
+    width: 1500px;
+    background-color: azure;
+    background-image: url("./images/bg-top.svg"),url("./images/bg-bottom.svg");
+    background-position: top right,bottom left;
+    background-repeat: no-repeat;
+}
+
+.heading{
+    font-family: Montserrat;
+    margin: 0px;
+}
+
+.checkboxSwitch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    width: 220px;
+}
+
+.toggle { 
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width : 40px; 
+    height : 20px; 
+    background-color: hsl(228, 45%, 44%); 
+    border-radius: 30px;
+    padding-right: 1px;
+} 
+        
+.toggle:after { 
+    content: ''; 
+    width: 19px; 
+    height: 18px; 
+    border-radius: 50%; 
+    margin-left: 1px;
+    background-color:white;  
+    transition:  all 0.5s; 
+} 
+        
+.checkbox:checked + .toggle::after { 
+    align-self: flex-end;
+} 
+        
+.checkbox:checked + .toggle { 
+    background-color: orange;    
+} 
+
+.checkbox {  
+    display : none; 
+} 
+
+.annuallyText{
+    font-family: Montserrat;
+    font-size: 18px;
+    color: hsl(228, 45%, 44%);
+}
+
+.monthlyText{
+    font-family: Montserrat;
+    font-size: 18px;
+    color: orange;
+}
+
+.annually{
+    display: flex;
+    height: 600px;
+    width: 1000px;
+    background-color:  hsl(228, 45%, 44%);
+}
+
+.monthly{
+    display:flex;
+    height:500px;
+    width:1000px;
+    background-color:orange;
+    display:none;
+}
