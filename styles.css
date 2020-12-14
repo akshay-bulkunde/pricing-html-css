@@ -6,6 +6,7 @@ body{
     font-family:Montserrat,monospace;
     background-color:#f7f7ff;
     font-weight: 700;
+    color: hsl(232, 13%, 33%);
 }
 
 .container {
@@ -30,12 +31,12 @@ body{
 
 .Basic {
    background-color:rgba(256,256,256,1);
-   border: 1px solid gray;
+   color: hsl(232, 13%, 33%);
 }
 
 .Master {
     background-color:white;
-    border: 1px solid gray;
+    color: hsl(232, 13%, 33%);
 }
 
 .more {
@@ -66,7 +67,7 @@ body{
     align-items: center;
     background-image:linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
     border-radius: 2%;
-    border: 1px solid gray;
+    color: hsl(240, 78%, 98%);
 }
 
 hr {
