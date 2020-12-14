@@ -10,11 +10,11 @@ console.log(cardThreePrice.innerText);
 
 toggleButton.addEventListener('change', (event) => {
 
-    if(toggleButton.checked === true) {
+    if(toggleButton.checked === false) {
         cardOnePrice.innerText = 199.9;
         cardTwoPrice.innerText = 249.99;
         cardThreePrice.innerText = 399.99;
-    } else {
+    } else if(toggleButton.checked === true) {
         cardOnePrice.innerText = 19.9;
         cardTwoPrice.innerText = 24.99;
         cardThreePrice.innerText = 39.99;
