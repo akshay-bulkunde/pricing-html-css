@@ -9,7 +9,7 @@ body{
 }
 
 .container {
-    height:800px;
+    height:750px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,10 +30,12 @@ body{
 
 .Basic {
    background-color:rgba(256,256,256,1);
+   border: 1px solid gray;
 }
 
 .Master {
     background-color:white;
+    border: 1px solid gray;
 }
 
 .more {
@@ -64,10 +66,12 @@ body{
     align-items: center;
     background-image:linear-gradient(to right,hsl(236, 72%, 79%),hsl(237, 63%, 64%));
     border-radius: 2%;
+    border: 1px solid gray;
 }
 
 hr {
     width:300px;
+    background-color:hsl(232, 13%, 33%);
 }
 
 .pricing {
@@ -165,4 +169,8 @@ hr {
   .dollarPrice {
       display: flex;
       align-items: center;
+  }
+
+  .type {
+      font-size: 20px;
   }
