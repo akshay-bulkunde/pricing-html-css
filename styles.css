@@ -59,6 +59,7 @@ body{
     border-radius: 4%;
     cursor: pointer;
     background-color:white;
+    color:hsl(237, 63%, 64%);
 }
 
 .Proheight {
