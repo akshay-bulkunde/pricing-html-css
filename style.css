@@ -39,13 +39,16 @@ body {
     border: 1px red dashed;
     text-align: center;
     flex:1;
-  }
+}
 
 .pricing-toggle {
     border: 1px red dashed;
     text-align: center;
     flex:1.5;
-  }
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .cards {
     display: flex;
@@ -144,6 +147,36 @@ body {
   border-bottom: 1px white solid;
 }
 
+#toggle-btn {
+  display: none;
+}
+
+.toggle-bar {
+  position: relative;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(236, 72%, 79%);
+}
+
+.toggle-bar:after {
+  content : "";
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 1.5rem; 
+  position: absolute;
+  top:0.2rem;
+  left:0.2rem;
+  background-color: #FFF;
+}
+
+#toggle-btn:checked ~ .toggle-bar {
+  background-color: hsl(237, 63%, 64%);
+}
+
+#toggle-btn:checked ~ .toggle-bar:after {
+  left: 2rem;
+}
 
 @media (max-width: 500px) {
 
