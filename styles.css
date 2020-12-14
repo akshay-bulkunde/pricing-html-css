@@ -3,9 +3,9 @@ body{
     background-position: top right, left bottom;
     background-repeat: no-repeat;
     font-size: 15px;
-    font-family:Montserrat,monospace;
+    font-family:'Montserrat',monospace;
     background-color:#f7f7ff;
-    font-weight: 700;
+    font-weight:bold;
     color: hsl(232, 13%, 33%);
 }
 
