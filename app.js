@@ -11,7 +11,7 @@ toggleButton.addEventListener('change', (event) => {
         cardTwoPrice.innerText = 249.99;
         cardThreePrice.innerText = 399.99;
     } else if(toggleButton.checked === true) {
-        cardOnePrice.innerText = 19.9;
+        cardOnePrice.innerText = 19.99;
         cardTwoPrice.innerText = 24.99;
         cardThreePrice.innerText = 39.99;
     }
