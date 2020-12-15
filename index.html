@@ -11,25 +11,61 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css"/>
 
     <title>Pricing component</title>
+    
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <!-- Feel free to remove these styles or customise in your own stylesheet -->
   </head>
   <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
+    <div class="pricing">
+      <h1 class="heading">Our Pricing</h1> 
+      <div class="checkboxSwitch">
+        <p class="annuallyText">Annually</p>
+        <input type="checkbox" id="switch" class="checkbox" onclick="change()"/> 
+        <label for="switch" class="toggle"> 
+        </label> 
+        <p class="monthlyText">Monthly</p>
+      </div>
+      <div class="annually">
+        <div class="basic" id="basic">
+          <h2>Basic</h2>
+          <span id="basicPrice">&dollar;199.99</span> 
+          <hr>
+          500 GB Storage
+          <hr>
+          2 User Allowed
+          <hr>
+          Send up to 3 GB
+          <hr>
+          <button class="learn">LEARN MORE</button>
+        </div>
+        <div class="professional" id="professional">
+          <h2>Professional</h2>
+          <span id="professionalPrice">&dollar;249.99</span>
+          <hr>
+          1 TB Storage
+          <hr>
+          5 User Allowed
+          <hr>
+          Send up to 10 GB
+          <hr>
+          <button class="learn">LEARN MORE</button>
+        </div>
+        <div class="master" id="master">
+          <h2>Master</h2>
+          <span id="masterPrice">&dollar;399.99</span>
+          <hr>
+          2 TB Storage
+          <hr>
+          10 User Allowed
+          <hr>
+          Send up to 20 GB
+          <hr>
+          <button class="learn">LEARN MORE</button>
+        </div>
+    </div>
+    <script type="text/javascript" src="change.js"></script>
   </body>
 </html>

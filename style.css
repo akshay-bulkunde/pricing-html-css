@@ -1,0 +1,281 @@
+body{
+    background-color: #4076D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.pricing{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50em;
+    width: 100em;
+    background-color: azure;
+    background-image: url("./images/bg-top.svg"),url("./images/bg-bottom.svg");
+    background-position: top right,bottom left;
+    background-repeat: no-repeat;
+}
+
+.heading{
+    font-family: Montserrat;
+    margin: 0px;
+}
+
+.checkboxSwitch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 25px;
+    width: 220px;
+}
+
+.toggle { 
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width : 40px; 
+    height : 20px; 
+    background-color: hsl(228, 45%, 44%); 
+    border-radius: 30px;
+    padding-right: 1px;
+    cursor: pointer; 
+} 
+        
+.toggle:after { 
+    content: '';
+    width: 19px; 
+    height: 18px; 
+    border-radius: 50%; 
+    margin-left: 1px;
+    background-color:white;  
+    transition:  all 0.5s; 
+} 
+        
+.checkbox:checked + .toggle::after { 
+    align-self: flex-end;
+} 
+        
+.checkbox:checked + .toggle { 
+    background-color: orange;    
+} 
+
+.checkbox {  
+    display : none; 
+} 
+
+.annuallyText{
+    font-family: Montserrat;
+    font-size: 18px;
+    color: hsl(228, 45%, 44%);
+}
+
+.monthlyText{
+    font-family: Montserrat;
+    font-size: 18px;
+    color: orange;
+}
+
+.annually{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40em;
+    width: 65em;
+}
+.basic{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 35em;
+    width: 20em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px #0ff;
+    background-color: white;
+}
+.professional{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 39.5em;
+    width: 20em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px #0ff;
+    background-color: white;
+}
+.master{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 35em;
+    width: 20em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px #0ff;
+    background-color: white;
+}
+#basicPrice,#masterPrice,#professionalPrice{
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 2.5em;
+}
+.learn{
+    cursor: pointer;
+    color: white;
+    width: 70%;
+    height: 2.5em;
+    background-color:  hsl(228, 55%, 58%);
+    border-radius: 8px;
+    border: none;
+}
+hr{
+    width: 70%;
+}
+.basic:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s;
+    background-color:  hsl(228, 55%, 58%);
+}
+.basic:hover .learn{
+    background-color: white;
+    color: hsl(228, 55%, 58%);
+}
+.professional:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s;
+    background-color:  hsl(228, 55%, 58%);
+}
+.professional:hover .learn{
+    background-color: white;
+    color: hsl(228, 55%, 58%);
+}
+.master:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s;
+    background-color:  hsl(228, 55%, 58%);
+}
+.master:hover .learn{
+    background-color: white;
+    color: hsl(228, 55%, 58%);
+}
+
+.basicMonthly{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 35em;
+    width: 20em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px #0ff;
+    background-color: white;
+}
+.professionalMonthly{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 39.5em;
+    width: 20em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px #0ff;
+    background-color: white;
+}
+.masterMonthly{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 35em;
+    width: 20em;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 1px #0ff;
+    background-color: white;
+}
+.basicMonthly .learn{
+    cursor: pointer;
+    color: white;
+    width: 70%;
+    height: 2.5em;
+    background-color:  orange;
+    border-radius: 8px;
+    border: none;
+}
+.professionalMonthly .learn{
+    cursor: pointer;
+    color: white;
+    width: 70%;
+    height: 2.5em;
+    background-color:  orange;
+    border-radius: 8px;
+    border: none;
+}
+.masterMonthly .learn{
+    cursor: pointer;
+    color: white;
+    width: 70%;
+    height: 2.5em;
+    background-color:  orange;
+    border-radius: 8px;
+    border: none;
+}
+.basicMonthly:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s;
+    background-color:  orange;
+}
+.basicMonthly:hover .learn{
+    background-color: white;
+    color: orange;
+}
+.professionalMonthly:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s;
+    background-color:  orange;
+}
+.professionalMonthly:hover .learn{
+    background-color: white;
+    color: orange;
+}
+.masterMonthly:hover{
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.3s;
+    background-color:  orange;
+}
+.masterMonthly:hover .learn{
+    background-color: white;
+    color: orange;
+}
+
+@media (max-width : 750px), (max-height : 600px), (orientation: portrait){
+    .pricing, .annually{
+        width: 90%;
+    }
+    .pricing{
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-top: 1em;
+        height: max-content;
+    }
+    .annually{
+        flex-direction: column;
+        height: max-content;
+        padding-bottom: 10px;
+        margin-top: 10px;
+    }
+    .basic, .basicMonthly, .professionalMonthly, .professional, .master, .masterMonthly{
+        height: max-content;
+        padding-bottom: 10px;
+    }
+}
