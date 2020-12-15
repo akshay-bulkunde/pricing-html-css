@@ -3,6 +3,7 @@
                     https://codepen.io/garetmckinley/pen/YmxYZr?editors=1100
                     https://www.w3schools.com/howto/howto_css_switch.asp
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 * {
@@ -27,7 +28,6 @@ body {
     height: 37rem;
     margin: auto;
     margin-top:4rem;
-    /* border: 1px purple dashed; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -37,14 +37,12 @@ body {
 }
 
 .container h1 {
-    /* border: 1px red dashed; */
     text-align: center;
     flex:1;
     color: hsl(232, 13%, 33%);
 }
 
 .pricing-toggle {
-    /* border: 1px red dashed; */
     text-align: center;
     flex:1.5;
     display:flex;
@@ -55,7 +53,6 @@ body {
 
 .cards {
     display: flex;
-    /* border: 1px blue dashed; */
     width: 100%;
     flex:7;
     height: 1rem;
@@ -78,7 +75,6 @@ body {
     margin: auto;
     margin-top: 7%;
     padding-top:10px;
-    /* border: 1px green dashed; */
     text-align: center;
     font-size: 15px;
     display: flex;
@@ -88,7 +84,6 @@ body {
 
 .price  {
   font-size: 2rem;
-  /* border: 1px red dashed; */
   margin-top: 7%;
   margin-bottom: 7%;
   color:  hsl(232, 13%, 33%);
@@ -102,7 +97,6 @@ body {
 }
 
 .card-info {
-  /* border: 1px orange dashed; */
   padding-top: 5%;
   padding-bottom: 5%;
   border-top: 1px gray solid;
@@ -133,8 +127,6 @@ body {
 
 .card-middle {
   background-color: hsl(237, 63%, 64%);
-  /* transform: scale(1.1,1.1); */
-  /* margin-bottom: 40px;  */
   height: 100%;
 }
 
