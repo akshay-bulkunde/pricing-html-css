@@ -87,11 +87,18 @@ body {
 }
 
 .price  {
-  font-size: 3.5rem;
+  font-size: 2rem;
   /* border: 1px red dashed; */
   margin-top: 7%;
   margin-bottom: 7%;
   color:  hsl(232, 13%, 33%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price span {
+  font-size: 3.5rem;
 }
 
 .card-info {
