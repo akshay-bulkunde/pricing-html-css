@@ -15,21 +15,85 @@
     <title>Pricing component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
+    <!-- <img src="/home/lakan/MB/frontEnd/pricing-html-css/myImages/WewaSt.jpg" alt="Girl in a jacket" width="1340" height="1200"> -->
+   <div class="main_flex_container">
+    <div class="div_toggle_button"><center><h2><b>Our Pricing</b></h2></center><br>  
+      <b>Annually</b></h5>
+
+      <label class="switch">
+        <input id='checkBox_id' type="checkbox">
+        <span class="slider round"></span>
+      </label>
+
+      <b>Monthly</b>
+    </div>
+
+    <div class="flex-container">
+      <div class="row">
+        <div class="left_box">
+         <div>
+          <center><b>Basic</b>
+            <h2 id='basic'>&dollar;199.99</h2><hr>
+            <h5>500 GB Storage</h5><hr>
+            <h5>2 Users Allowed</h5><hr>
+            <h5>Send up to 3 GB</h5><hr>
+            <button class="button1" type="button">LEARN MORE</button>
+          </center>
+         </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="center_box">
+        <div>
+          <div class="inner_box">
+          <center><b>Professional</b>
+            <h2 id='Professional'>&dollar;249.99</h2><hr>
+            <h5>1 GB Storage</h5> <hr>
+            <h5>5 Users Allowed</h5><hr>
+            <h5>Send up to 10 GB</h5><hr>
+            <button class="button2" type="button">LEARN MORE</button>
+          </center>
+        </div>
+        </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="right_box">
+        <div>
+          <center><b>Master</b>
+            <h2 id="Master">&dollar;399.99</h2><hr>
+            <h5>2 TB Storage</h5><hr>
+            <h5>10 Users Allowed</h5><hr>
+            <h5>Send up to 20 GB</h5><hr>
+            <button class="button1" type="button">LEARN MORE</button>
+          </center>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+      document.getElementById('checkBox_id').addEventListener('change',(event)=>{
+        if(event.target.checked) {
+          document.getElementById('basic').innerHTML="&dollar;19.99"
+          document.getElementById('Professional').innerHTML="&dollar;24.99"
+          document.getElementById('Master').innerHTML="&dollar;39.99"
+
+        } else {
+          document.getElementById('basic').innerHTML="&dollar;199.99"
+          document.getElementById('Professional').innerHTML="&dollar;249.99"
+          document.getElementById('Master').innerHTML="&dollar;399.99"
+        }
+      })
+  </script>
   </body>
 </html>
+
+
+
