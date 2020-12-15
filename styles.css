@@ -119,10 +119,10 @@ hr {
 
 .switch {
   position: relative;
-  display: inline-block;
+  display: flex;
   width: 50px;
   height: 24px;
-  top:12px;
+  align-self:center;
 }
 
 .switch input {
