@@ -113,14 +113,16 @@ body {
   padding: 3%;
   text-transform: uppercase;
   border-radius: 5px;
-  background-color: transparent;
-  color: hsl(237, 63%, 64%);
+  background-color: hsl(237, 63%, 64%);
+  color: #FFF;
   font-weight: 700;
+  border: 1px hsl(237, 63%, 64%) solid;
 }
 
 .card button:hover {
-  color: #FFF;
-  background-color: hsl(237, 63%, 64%);
+  color: hsl(237, 63%, 64%);
+  background-color: #FFF;
+  border: 1px hsl(237, 63%, 64%) solid;
 }
 
 .card-middle {
@@ -141,13 +143,16 @@ body {
 }
 
 .card-middle button {
-  color: #FFF;
+  color: hsl(237, 63%, 64%);
+  background-color: #FFF;
   font-weight: 700;
+  border: 1px #FFF solid;
 }
 
 .card-middle button:hover {
-  color: hsl(237, 63%, 64%);
-  background-color: #FFF;
+  color:#FFF;
+  background-color: hsl(237, 63%, 64%);
+  border: 1px #FFF solid;
 }
 .card-middle .card-info{
   border-top: 1px white solid;
