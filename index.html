@@ -19,7 +19,24 @@
       @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
       
     </style>
-    
+    <script>
+      annually=false;
+      function changePlan(){
+          if(annually){    
+            document.getElementById("basic").innerHTML="<span class='dollar'>&dollar;</span>"+ 199.99;
+            document.getElementById("pro").innerHTML="<span class='dollar'>&dollar;</span>"+249.99;
+            document.getElementById("master").innerHTML="<span class='dollar'>&dollar;</span>"+399.99;
+            annually=false;
+          }
+          else{
+            document.getElementById("basic").innerHTML= "<span class='dollar'>&dollar;</span>"+19.99;
+            document.getElementById("pro").innerHTML="<span class='dollar'>&dollar;</span>"+24.99;
+            document.getElementById("master").innerHTML="<span class='dollar'>&dollar;</span>"+39.99;
+            annually=true;    
+          }
+          
+      }
+      </script>
     
   </head>
   
