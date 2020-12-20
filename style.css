@@ -8,6 +8,7 @@
     right:0;
     top:0;
     z-index: -1;
+    
 }
 .bg-btm-img{
     position: absolute;
@@ -27,6 +28,7 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
+    
 }
 .price-card{
     margin: 40px 10px;
@@ -34,7 +36,9 @@
     padding: 40px;
     box-shadow: 0 0 20px gray;
     transition: margin 1s;
+    background-color: #fbfeff;
     z-index: 3;
+    
 }
 .dollar{
     font-size: 40px;
