@@ -34,7 +34,7 @@
     
 }
 .price-card{
-    margin: 40px 10px;
+    margin: 40px 5px;
     color: #656565;
     padding: 40px;
     box-shadow: 0 0 20px gray;
@@ -59,7 +59,7 @@ hr{
     margin: 30px;
 }
 .price-card:hover{
-    margin: 20px;
+    margin: 20px 0;
     color: #656565;
     background-color: #8c90e9;
     color: #fbfeff;
