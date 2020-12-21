@@ -1,6 +1,7 @@
 *{
     font-family: 'Montserrat', sans-serif;
     text-align: center;
+    
 }
 
 .bg-top-img{
@@ -20,9 +21,11 @@
 }
 .Pricing-title{
     color: #858585;
+    
 }
 .toggler{
     color: #a5a5a5;
+    
 }
 .prices{
     display: flex;
@@ -39,6 +42,11 @@
     background-color: #fbfeff;
     z-index: 3;
     
+}
+hr{
+  height: 1px;
+  background-color: #858585;
+  border: none;
 }
 .dollar{
     font-size: 40px;
