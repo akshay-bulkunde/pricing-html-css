@@ -51,6 +51,7 @@ hr{
 .dollar{
     font-size: 40px;
     font-weight: 300;
+    margin: 0 10px;
 }
 .price{
     font-size: 60px;
@@ -146,4 +147,10 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 34px;
+}
+
+#basic,#pro,#master{
+  display: flex;
+  align-items: center;
+  
 }
