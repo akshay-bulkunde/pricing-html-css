@@ -74,9 +74,10 @@ hr{
     border: none;
     border-radius: 5px;
     margin-top: 50px;
-    padding: 5px 35px;
+    padding: 8px 35px;
     background-color:  #8c90e9;
     color:  #fbfeff;
+    font-size: 15px;
 }
 .learn-more:hover{
     background-color: #fbfeff;
