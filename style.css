@@ -155,3 +155,33 @@ input:checked + .slider:before {
   align-items: center;
   
 }
+
+@media(max-width: 768px){
+  .prices{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .price-card{
+    width: 100%;
+    
+  }
+  .price-card:hover{
+    margin: 0;
+  }
+  #basic,#pro,#master{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bg-top-img{
+    position: absolute;
+    left: 220px;
+    overflow: hidden;
+    
+  }
+  .bg-btm-img{
+      position: absolute;
+      top: 1000px;
+  }
+}
