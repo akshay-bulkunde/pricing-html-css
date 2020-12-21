@@ -5,7 +5,7 @@ body{
     font-size: 15px;
     font-family:'Montserrat',monospace;
     background-color:#f7f7ff;
-    font-weight:bold;
+    font-weight:700;
     color: hsl(232, 13%, 33%);
 }
 
@@ -176,4 +176,22 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+@media all and (max-width:912px){
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    height: 1000px;
+  }
+
+  .Proheight {
+    height: 350px;
+    margin-top: 10px;
+  }
+
+  .state {
+    margin-top: 10px;
+  }
 }
