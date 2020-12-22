@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -13,23 +12,77 @@
     />
 
     <title>Pricing component</title>
+    <link rel="stylesheet" href="./styles.css" class="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
+    <div class="container">
+
+      <h1 class="pricing">Our Pricing</h1>
+
+      <div class="pricing-type">
+        <span>Annually</span>
+        <span>
+          <label class="toggle">
+            <input type="checkbox" checked>
+            <span class="slider round"></span>
+          </label>
+        </span>
+        <span>Monthly</span>
+      </div>
+
+      
+      <div class="price-comparsion">
+
+        <div class="price-box">
+          <h4>Basic</h4>
+          <div class="price">
+            19.99
+          </div>
+          <!-- <p>&dollar;199.99 </p> -->
+          <ul class="feature">
+            <li>500 GB Storage</li>
+            <li>2 Users Allowed</li>
+            <li>Send up to 3 GB</li>
+          </ul>
+          <button class="cta">Learn More</button>
+        </div>
+
+        <div class="price-box">
+          <h4>Professional</h4>
+          <div class="price">
+            24.99 
+          </div>
+          <!-- <p>&dollar;249.99 </p> -->
+          <ul class="feature">
+            <li>1 TB Storage</li>
+            <li>5 Users Allowed</li>
+            <li>Send up to 10 GB</li>
+          </ul>
+          <button class="cta">Learn More</button>
+        </div>
+
+        <div class="price-box">
+          <h4>Master</h4>
+          <div class="price">
+            39.99
+          </div>
+          <!-- <p>&dollar;399.99</p> -->
+          <ul class="feature">
+            <li>2 TB Storage</li>
+            <li>10 Users Allowed</li>
+            <li>Send up to 20 GB</li>
+          </ul>
+          
+          <button class="cta">Learn More</button>
+        </div>  
+      </div>
+
+      
+
+    </div>
+    
   </body>
 </html>
