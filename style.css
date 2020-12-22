@@ -157,6 +157,7 @@ input:checked + .slider:before {
 }
 
 @media(max-width: 768px){
+  
   .prices{
     display: flex;
     flex-direction: column;
@@ -184,4 +185,10 @@ input:checked + .slider:before {
       position: absolute;
       top: 1000px;
   }
+  .toggler{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
 }
