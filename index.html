@@ -11,25 +11,99 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Pricing component</title>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+      
     </style>
+    <script>
+      annually=false;
+      function changePlan(){
+          if(annually){    
+            document.getElementById("basic").innerHTML='<div id="basic"><span class="dollar">&dollar;</span>199.99</div>';
+            document.getElementById("pro").innerHTML='<div id="pro"><span class="dollar">&dollar;</span>249.99</div>';
+            document.getElementById("master").innerHTML='<div id="master"><span class="dollar">&dollar;</span>399.99</div>';
+            annually=false;
+          }
+          else{
+            document.getElementById("basic").innerHTML= '<div id="basic"><span class="dollar">&dollar;</span>19.99</div>';
+            document.getElementById("pro").innerHTML='<div id="pro"><span class="dollar">&dollar;</span>24.99</div>';
+            document.getElementById("master").innerHTML='<div id="master"><span class="dollar">&dollar;</span>39.99</div>';
+            annually=true;    
+          }
+          
+      }
+      </script>
+    
   </head>
+  
   <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
+    <div class="container">
+      <div class="bg-top-img"><img src="images/bg-top.svg" alt="top img"></div>
+      <div class="bg-btm-img"><img src="images/bg-bottom.svg" alt="bottom img"></div> 
+      <div class="Pricing-container">
+        <div class="Pricing-title"><h1>Our Pricing</h1></div>
+        <div class="toggler">Annually <label class="switch">
+          <input type="checkbox" onclick="changePlan()">
+          <span class="slider round"></span>
+        </label> Monthly</div>
+        <div class="prices">
+          
+          <div class="price-card">
+            Basic
+            <div class="price">
+              <div id="basic"><span class="dollar">&dollar; </span> 199.99</div>
+              <div class="benefits">
+                <hr>
+                <div>500 GB Storage</div>
+                <hr>
+                <div>2 Users Allowed</div>
+                <hr>
+                <div>Send up to 3 GB</div>
+                <hr>
+                <div class="learn-more">LEARN MORE</div>
+              </div>
+            </div>
+          </div>
+          <div class="price-card">
+            Professional
+            <div class="price">
+              <div id="pro"><span class="dollar">&dollar; </span> 249.99</div>
+              <div class="benefits">
+                <hr>
+                <div>1 TB Storage</div>
+                <hr>
+                <div>5 Users Allowed</div>
+                <hr>
+                <div>Send up to 10 GB</div>
+                <hr>
+                <div class="learn-more">LEARN MORE</div>
+              </div>
+            </div>
+          </div>
+          <div class="price-card">
+            Master
+            <div class="price">
+              <div id="master"><span class="dollar">&dollar; </span> 399.99</div>
+              <div class="benefits">
+                <hr>
+                <div>2 TB Storage</div>
+                <hr>
+                <div>10 Users Allowed</div>
+                <hr>
+                <div>Send up to 20 GB</div>
+                <hr>
+                <div class="learn-more">LEARN MORE</div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
   </body>
 </html>
