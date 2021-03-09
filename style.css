@@ -1,0 +1,142 @@
+body{
+    font-family: sans-serif;
+    background-color: #F7F7FF;
+    background-image: url("./images/bg-top.svg");
+    background-repeat: no-repeat;
+    background-position: right top ;
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+    justify-content: center;
+    color: #494c5f;
+  }
+
+
+.container {
+    justify-content: center;
+    height: 70%;
+    margin-top: 3%;
+}  
+
+#title{
+    margin-top: 3%;
+    font-size: 2em;
+    font-weight: bold;
+}  
+
+h1.title {
+    position: absolute;
+    letter-spacing: 2px;
+    margin-bottom: 1.5rem;
+    top: 60px;
+    left: 50%;
+    color: #66667F;
+    transform: translateX(-50%);
+    text-align: center;
+  }
+
+h1{
+    font-size: 4em;
+    font-weight: bold;
+  }
+h1 span{
+    font-size: 0.5em;
+    font-weight: bold;
+    vertical-align:30%;
+    margin-right: 2px;
+  }
+
+.toggle-switch{
+    display: flex;
+    height: 30px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 14px;
+    color: #D2D2DF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}  
+
+.toggler{
+    appearance: none;
+    width: 50px;
+    height: 25px;
+    background-color: #8E95ED;
+    border-radius: 30px;
+    margin: 0 1rem;
+    position: relative;
+}
+
+.toggler::before{
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    position: absolute;
+    border-radius: 50%;
+    top:50%;
+    transform: translateY(-50%);
+    right:4px;
+}
+
+.toggler:checked:before{
+    right: 50%;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px 5px 25px;
+}
+
+.card{
+    height: auto;
+    background-color: #FFFFFF; 
+    border-radius: 10px 30px 10px 30px;
+    padding: 2rem;
+    transition: transform .2s; 
+    margin: 5px 5px 5px 5px; 
+    cursor: pointer;
+    text-align: center;
+ }
+
+ .cardHover:hover{
+    background: linear-gradient(180deg, #a3a8f0, #696fdd);
+    transform: scale(1.08);
+    color: white;
+  }
+
+.cardHover:hover button{
+    background: white;
+    color: #696fdd;
+}
+
+hr{
+    border: 1px solid white;
+    width: 80%;
+    font-size: 2em;
+  }
+
+button{
+    border: 1px solid #949cea;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #a3a8f0, #696fdd);
+    color: white;
+    cursor: pointer;
+    padding: 10px 0 10px 0;
+    width: 80%;
+    margin: 5px 0 5px 0;
+    font-weight: bold;
+  }
+
+
+.card-title{
+    font-size: 0.8rem;
+    font-weight: bolder;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1rem;
+}
