@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Pricing component</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -24,12 +24,56 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    
   </head>
   <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
+    <div class="container">
+      <h2 id="title"> Our Pricing </h2>
+      <div class="toggle-switch">
+            <span>Annually</span>
+            <input type="checkbox" class="toggler">
+            <span> Monthly</span>
+      </div>
+
+      <div class="cards">
+
+        <!-- Basic Plan-->
+        <div class="card cardHover">
+          <h3 class="card-title"> Basic </h3>
+          <h1><span>&dollar;</span>199.99</h1> <hr>
+            500 GB Storage<hr>
+            2 Users Allowed<hr>
+            Send up to 3 GB<hr>
+      
+          <button type="button"> LEARN MORE</button>
+        </div>
+
+        
+        <!-- Professional Plan-->
+        <div class="card cardHover">
+          <h3 class="card-title"> Professional </h3>
+          <h1><span>&dollar;</span>249.99</h1><hr>
+          
+            1 TB Storage<hr>
+            5 Users Allowed<hr>
+            Send up to 10 GB<hr>  
+          
+          <button type="button"> LEARN MORE</button>
+        </div>
+
+        <!-- Master Plan-->
+
+        <div class="card cardHover">
+          <h3 class="card-title">Master</h3>
+          <h1><span>&dollar;</span>399.99</h1><hr>
+          
+          2 TB Storage<hr>
+          10 Users Allowed<hr>
+          Send up to 20 GB<hr>
+          
+          <button type="button"> LEARN MORE</button>
+        </div>
+
+      </div>
   </body>
 </html>
