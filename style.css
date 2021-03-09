@@ -89,7 +89,11 @@ h1{
     padding: 30px;
     box-shadow: 5px;
 }
-
+.Desription:hover{
+    background-image: linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    transform: scale(0.99);
+}
 h4{
     margin: 0;
 }
