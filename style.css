@@ -104,7 +104,7 @@ p{
     width:250px;
 }
 
-.Desription.highlighted{
+/* .Desription.highlighted{
     background-image: linear-gradient(to right,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     color: white;
     transform: scale(1.15);
@@ -113,7 +113,7 @@ p{
     background-image: none;
     background-color: white;
     color:hsl(237, 63%, 64%);
-}
+} */
 
 .Desription button{
     font-family: 'Montserrat', sans-serif;
