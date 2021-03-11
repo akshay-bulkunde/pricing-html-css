@@ -33,6 +33,17 @@ body::after{
     width: 100%;
     z-index: -1;
 }
+
+.monthly::before{
+    content:'$';
+    font-size: 30px;
+    vertical-align: middle;
+}
+.annually::before{
+    content:'$';
+    font-size: 30px;
+    vertical-align: middle;
+}
 .container{
     margin: auto;
     max-width: 100%;
@@ -101,7 +112,7 @@ h4{
 p{
     font-size: 4em;
     margin:15px 0;
-    width:250px;
+    width:300px;
 }
 
 /* .Desription.highlighted{
