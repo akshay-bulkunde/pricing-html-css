@@ -1,4 +1,4 @@
-const checkbox = document.getElementById("toggle-button");
+const checkbox = document.getElementById("toggle-btn");
 
 checkbox.addEventListener("change", function (event) {
   event.preventDefault();
