@@ -1,0 +1,19 @@
+{
+  "name": "pricing-html-css",
+  "version": "1.0.0",
+  "description": "![Design preview for the File Transfer pricing component coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/sagarika_08/pricing-html-css.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/sagarika_08/pricing-html-css/issues"
+  },
+  "homepage": "https://gitlab.com/sagarika_08/pricing-html-css#readme"
+}
