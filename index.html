@@ -1,35 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
 
-    <title>Pricing component</title>
+  <title>Pricing component</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
-  </body>
+<body>
+
+  <header id="header-container" class="flex-column">
+    <h2 class="head-name">Our Pricing</h2>
+    <div id="toggle-container" class="design-row">
+      <h3>Annually</h3>
+      <div class="switch">
+        <input id="toggle-button" type="checkbox">
+      </div>
+      <h3>Monthly</h3>
+    </div>
+  </header>
+
+  <section id="section-container" class="design-row">
+    <div id="item-1" class="design-column list">
+      <h3 class="title">Basic</h3>
+      <h3 id="price-1" class="price">&dollar;199.99</h3>
+      <h3 class="item">500 GB
+        Storage</h3>
+      <h3 class="item">2 Users Allowed</h3>
+      <h3 class="item">Send up to 3 GB</h3>
+      <a href="">Learn More</a>
+      <!-- <button id="btn1">Learn More</button> -->
+    </div>
+    <div id="item-2" class="design-column list">
+      <h3 class="title">Professional</h3>
+      <h3 id="price-2" class="price">&dollar;249.99</h3>
+      <h3 class="item">1 TB Storage</h3>
+      <h3 class="item">5 Users Allowed</h3>
+      <h3 class="item">Send up to 10 GB</h3>
+      <!-- <button id="btn2">Learn More</button> -->
+
+    </div>
+    <div id="item-3" class="design-column list">
+      <h3 class="title">Master</h3>
+      <h3 id="price-3" class="price">&dollar;399.99</h3>
+      <h3 class="item">2 TB Storage</h3>
+      <h3 class="item">10 Users Allowed</h3>
+      <h3 class="item">Send up to 20 GB</h3>
+      <!-- <button id="btn3">Learn More</button> -->
+
+    </div>
+  </section>
+  <script src="script.js"></script>
+
+</body>
+
 </html>
