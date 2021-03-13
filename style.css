@@ -1,0 +1,132 @@
+body {
+  margin: 0px;
+  background-color: hsl(240, 78%, 98%);
+  background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: top right, bottom left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  color: hsl(234, 14%, 74%);
+}
+
+#container-1 {
+  height: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.switch {
+  position: relative;
+  margin: 20px;
+}
+
+#toggle-btn {
+  position: relative;
+  height: 50px;
+  width: 100px;
+  -webkit-appearance: none;
+  outline: none;
+  border-radius: 50px;
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  transition: 0.3s;
+}
+
+#toggle-btn:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  top: 4px;
+  left: 7px;
+  background-color: hsl(240, 78%, 98%);
+  transition: 0.3s;
+}
+
+#toggle-btn:checked::before {
+  left: 51px;
+}
+
+.tag,
+.title {
+  color: hsl(233, 13%, 49%);
+}
+
+#container-2 {
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-cnt {
+  height: 80%;
+  width: 20%;
+  padding: 10px;
+  background-color: white;
+  box-shadow: 1px 1px 10px hsl(234, 14%, 74%);
+  border-radius: 5px;
+}
+
+.price {
+  font-size: 50px;
+  color: hsl(232, 13%, 33%);
+}
+
+#title-2,
+#price-2 {
+  color: hsl(240, 78%, 98%);
+}
+
+#item-2 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-image: linear-gradient(
+    to bottom right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  color: hsl(240, 78%, 98%);
+}
+
+.item {
+  border-bottom: 1px solid hsl(234, 14%, 74%);
+}
+.btn {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  padding: 10px;
+  color: hsl(240, 78%, 98%);
+  border-radius: 5px;
+}
+
+.btn-2 {
+  background-image: linear-gradient(
+    to right,
+    hsl(240, 78%, 98%),
+    hsl(234, 14%, 74%)
+  );
+  color: hsl(233, 13%, 49%);
+}
+
+@media (max-width: 1100px) {
+  #container-2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  .price-cnt {
+    height: 400px;
+    width: 300px;
+  }
+}
