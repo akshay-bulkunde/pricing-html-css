@@ -70,9 +70,18 @@ h2{
 
 .box p{
 	color: hsl(232, 13%, 33%);
-	font-size: 2em;
+	font-size: 4em;
 	margin: 15px 0;
 	width: 250px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.box p::before{
+	content: '$\2006';
+	font-size: 0.55em;
+
 }
 
 .box h4{
@@ -122,6 +131,10 @@ h2{
     background-image: none;
 	background-color: #fff;
 	color: hsl(237, 63%, 64%);
+}
+
+.box:hover p{
+	color: #fff;
 }
 
 .toggle-switch{
@@ -177,7 +190,7 @@ h2{
 	display: none;
 }
 
-@media screen and (max-width: 375px){
+@media screen and (max-width: 980px){
 	.cards{
 		flex-direction: column;
 	}
