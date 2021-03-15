@@ -51,6 +51,7 @@ body::after {
 
 h2{
     color: hsl(233, 13%, 49%);
+	margin: 30px;
 }
 
 .toggle-switch{
@@ -102,22 +103,22 @@ h2{
     margin-top: 10px;
 }
 
-.box.hover{
+.box:hover{
 	background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
 	color: #fff;
 	transform: scale(1.15);
 }
 
-.box.hover ul{
+.box:hover ul{
     padding: 0;
     list-style-type: none;
 }
 
-.box.hover ul li{
+.box:hover ul li{
     color: #fff;
 }
 
-.box.hover button{
+.box:hover button{
     background-image: none;
 	background-color: #fff;
 	color: hsl(237, 63%, 64%);
@@ -180,9 +181,7 @@ h2{
 	.cards{
 		flex-direction: column;
 	}
-	.box.hover{
-		transform: scale(1);
-	}
+
 	body::after{
 		background-image: none;
 	}
