@@ -142,7 +142,7 @@ body::after{
     hsl(237,63%,64%));
     letter-spacing: 2px;;
 }
-.boxes-container .box.professional_box{
+.boxes-container .box:hover{
     background-image: linear-gradient(to right,hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
     color: #ffffff;
     transform: scale(1.1);
@@ -160,7 +160,9 @@ body::after{
     .boxes-container{
         flex-direction: column;
     }
-    .boxes-container .box.professional_box{
+    .boxes-container .box:hover{
+        background-image: linear-gradient(to right,hsl(236, 72%, 79%) , hsl(237, 63%, 64%));
+        color: #ffffff;
         transform: scale(1);
     }
 }
