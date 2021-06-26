@@ -1,10 +1,47 @@
 * {
   margin: 0;
   border: 0;
+  text-align: center;
 }
 body {
   background-color: hsl(240, 78%, 98%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+}
+
+hr {
+  height: 1px;
+  border-width: 0;
+  background-color: grey;
 }
 .flex-container {
   display: flex;
+  justify-content: center;
+}
+
+.flex-container div p {
+  margin: 5%;
+  padding: 5%;
+}
+
+.flex-container div {
+  background-color: white;
+  padding: 5%;
+  border-radius: 5%;
+}
+
+.flex-container button {
+  width: 100%;
+  margin: 5%;
+  padding: 5%;
+  border-radius: 2%;
+  background-image: linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+}
+
+#upper-box {
+  margin: 2%;
+  padding: 2%;
+}
+#price {
+  font-size: large;
 }
