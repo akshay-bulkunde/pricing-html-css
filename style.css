@@ -15,8 +15,11 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: hsl(240, 78%, 98%);
 	color: hsl(232, 13%, 33%);
+	background: url("./images/bg-top.svg") top right no-repeat,
+		url("./images/bg-bottom.svg") bottom left no-repeat;
+
+	background-color: hsl(240, 78%, 98%);
 }
 
 .main .top {
