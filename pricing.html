@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="stylePricing.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="headcontainer">
+        <h2 class="priceing">Our Pricing</h2>
+        <div class="toddleContainer">
+            <p>Annually</p>
+            <label class="switch">
+                <input type="checkbox" id="myCheck" onclick="change()">
+                <span class="slider round"></span>
+            </label>
+            <p>Monthly</p>
+        </div>
+    </section>
+    <div class="cardbox">
+        <div class="box">
+            <div class="boxtext1">Basic</div>
+            <div class="boxprice" id="price1">$199.99</div>
+            <div class="boxdetails">
+                <div class="boxstorage">500 GB Storage</div>
+                <div class="boxusers">2 Users Allowed</div>
+                <div class="boxlimit">Spend up to 3 GB</div>
+            </div>
+            <div class="boxtext2">LEARN MORE</div>
+        </div>
+        <div class="box">
+            <div class="boxtext1">Professional</div>
+            <div class="boxprice" id="price2">$249.99</div>
+            <div class="boxdetails">
+                <div class="boxstorage">1 TB Storage</div>
+                <div class="boxusers">5 Users Allowed</div>
+                <div class="boxlimit">Spend up to 10 GB</div>
+            </div>
+            <div class="boxtext2">LEARN MORE</div>
+        </div>
+        <div class="box">
+            <div class="boxtext1">Master</div>
+            <div class="boxprice" id="price3">$399.99</div>
+            <div class="boxdetails">
+                <div class="boxstorage">2 TB Storage</div>
+                <div class="boxusers">10 Users Allowed</div>
+                <div class="boxlimit">Spend up to 20 GB</div>
+            </div>
+            <div class="boxtext2">LEARN MORE</div>
+        </div>
+    </div>
+</body>
+<script>
+
+    function change() {
+        var checkBox = document.getElementById( "myCheck" );
+        if ( checkBox.checked == true ) {
+            document.querySelector( "#price1" ).innerHTML = "$19.99";
+            document.querySelector( "#price2" ).innerHTML = "$24.99";
+            document.querySelector( "#price3" ).innerHTML = "$39.99";
+        } else {
+            document.querySelector( "#price1" ).innerHTML = "$199.99";
+            document.querySelector( "#price2" ).innerHTML = "$249.99";
+            document.querySelector( "#price3" ).innerHTML = "$399.99";
+        }
+    }
+
+</script>
+
+</html>
