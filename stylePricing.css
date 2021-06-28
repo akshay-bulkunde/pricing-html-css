@@ -136,8 +136,6 @@ body::after {
   z-index: -1;
 }
 .boxstorage {
-  display: flex;
-  flex-wrap: wrap;
   padding: 5% 0;
   border-bottom: 1px solid hsl(234deg 16% 84%);
 }
@@ -148,7 +146,7 @@ body::after {
 .boxlimit {
   border-bottom: 1px solid hsl(234deg 16% 84%);
   padding: 5% 0;
-  width: auto;
+  justify-self: stretch;
 }
 .box {
   display: flex;
