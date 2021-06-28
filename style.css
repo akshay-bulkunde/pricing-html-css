@@ -43,6 +43,9 @@ h1{
   font-size: 2.5rem;
   display:none;
 }
+.toggle-bar:hover {
+    opacity: 0.4;
+}
 p{
   font-size:1.2em;
   padding:0.5em;
