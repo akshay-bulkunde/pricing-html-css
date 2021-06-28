@@ -93,8 +93,8 @@ input:checked + .slider:before {
 }
 
 .boxtext1 {
-  padding: 20px;
-  font-size: 20px;
+  padding: 10%;
+  font-size: 150%;
 }
 
 .priceing {
@@ -102,11 +102,14 @@ input:checked + .slider:before {
 }
 .boxprice {
   padding: 15px;
-  font-size: 250%;
+  font-size: 200%;
   font-weight: bold;
 }
 .boxdetails {
-  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 8%;
 }
 body::before {
   content: "";
