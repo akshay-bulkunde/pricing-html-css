@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+/* * {
+    outline: 1px solid red !important;
+ } */
+
+.container{
+  background-color: hsl(240, 78%, 98%);
+   font-size: 15px;   
+}
+h1{
+  text-align:center;
+  padding:1.5rem;
+}
+.toggle{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:hsl(234, 14%, 74%);
+}
+.toggle-bar{
+  height:1.5rem;
+  width:3.5rem;
+  background-color:hsl(237, 63%, 64%);
+  border-radius:15px;
+  padding:0.5rem;
+  margin: 0 10px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center; 
+}
+.toggle-ball{
+  height:1.3rem;
+  width:1.3rem;
+  background-color:white;
+  border-radius:50%;
+}
+.monthly{
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+.annually{
+  font-size: 2.5rem;
+  display:none;
+}
+p{
+  font-size:1.2em;
+  padding:0.5em;
+
+}
+.cards{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:3rem;
+}
+
+.card-left,.card-middle,.card-right{
+  background-color: white;
+  box-shadow: -1px 2px 20px 6px rgba(0,0,0,0.37);
+  width:100%;
+  padding:1.5rem;
+}
+.card-middle{
+  background:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color:white;
+  padding:3.5rem 1.2rem;
+  border-radius:10px;
+}
+.card-left {
+   border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px
+}
+
+.card-right {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+hr{
+    opacity: 0.3;
+}
+
+button{
+   border: 1px solid #949cea;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #a3a8f0,#696fdd);
+    color: white;
+    cursor: pointer;
+    padding: 10px 0 10px 0;
+    width: 80%;
+    margin: 5px 0 5px 0;
+    font-weight: bold;
+}
+
+.card-middle button {
+    color: hsl(237, 63%, 64%);
+    background: white;  
+}
+
