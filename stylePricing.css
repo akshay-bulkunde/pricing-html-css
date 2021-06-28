@@ -138,12 +138,16 @@ body::after {
 .boxstorage {
   display: flex;
   flex-wrap: wrap-reverse;
-  margin-top: 10px;
+  padding: 5% 0;
   border-bottom: 1px solid hsl(234deg 16% 84%);
 }
 .boxusers {
-  padding: 10px 0;
+  padding: 5% 0;
   border-bottom: 1px solid hsl(234deg 16% 84%);
+}
+.boxlimit {
+  border-bottom: 1px solid hsl(234deg 16% 84%);
+  padding: 5% 0;
 }
 .box {
   display: flex;
