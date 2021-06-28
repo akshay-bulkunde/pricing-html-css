@@ -109,7 +109,6 @@ input:checked + .slider:before {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 8%;
 }
 body::before {
   content: "";
@@ -136,16 +135,16 @@ body::after {
   z-index: -1;
 }
 .boxstorage {
-  padding: 5% 0;
+  padding: 8% 0 0 0;
   border-bottom: 1px solid hsl(234deg 16% 84%);
 }
 .boxusers {
-  padding: 5% 0;
+  padding: 8% 0 0 0;
   border-bottom: 1px solid hsl(234deg 16% 84%);
 }
 .boxlimit {
   border-bottom: 1px solid hsl(234deg 16% 84%);
-  padding: 5% 0;
+  padding: 8% 0 0 0;
   justify-self: stretch;
 }
 .box {
@@ -156,11 +155,11 @@ body::after {
   justify-content: space-evenly;
   border-radius: 10px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
-  padding: 7% 0px 7% 0px;
+  padding: 5% 0px 5% 0px;
   border-bottom: 1px solid hsl(234deg 16% 84%);
   color: hsl(233, 13%, 49%);
   height: 50vh;
-  width: 30vh;
+  width: 35vh;
   font-family: "Montserrat", sans-serif;
   margin: 10px;
 }
@@ -169,7 +168,7 @@ body::after {
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 50%;
+  height: 10%;
   border: none;
   cursor: pointer;
   padding: 4%;
@@ -182,8 +181,8 @@ body::after {
   color: white;
 }
 .boxdetails div {
-  padding: 15px;
   height: 5vh;
+  width: 100%;
 }
 
 .box:hover {
