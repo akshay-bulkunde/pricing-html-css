@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 /* * {
     outline: 1px solid red !important;
@@ -18,7 +19,7 @@ h1{
   color:hsl(234, 14%, 74%);
 }
 .toggle-bar{
-  height:1.5rem;
+  height:1rem;
   width:3.5rem;
   background-color:hsl(237, 63%, 64%);
   border-radius:15px;
@@ -96,5 +97,19 @@ button{
 .card-middle button {
     color: hsl(237, 63%, 64%);
     background: white;  
+}
+
+/* Media query for the window less than 375px */
+
+@media only screen and (max-width: 375px) {
+    .cards{
+      display: flex;   
+      flex-direction:column;
+      justify-content: center;
+    }
+    .card-left , .card-middle , .card-right {       
+        margin: 1rem;
+        border-radius: 15px;       
+    }
 }
 
