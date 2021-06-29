@@ -60,24 +60,24 @@ p{
   padding:3rem;
 }
 
-.card-left,.card-middle,.card-right{
+.basic-plan,.professional-plan,.master-plan{
   background-color: white;
   box-shadow: -1px 2px 20px 6px rgba(0,0,0,0.37);
   width:100%;
   padding:1.5rem;
 }
-.card-middle{
+.professional-plan{
   background:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   color:white;
   padding:3.5rem 1.2rem;
   border-radius:10px;
 }
-.card-left {
+.basic-plan {
    border-bottom-left-radius: 10px;
     border-top-left-radius: 10px
 }
 
-.card-right {
+.master-plan{
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px
 }
@@ -98,7 +98,7 @@ button{
     font-weight: bold;
 }
 
-.card-middle button {
+.professional-plan button {
     color: hsl(237, 63%, 64%);
     background: white;  
 }
@@ -111,7 +111,7 @@ button{
       flex-direction:column;
       justify-content: center;
     }
-    .card-left , .card-middle , .card-right {       
+    .basic-plan , .professional-plan , .master-plan {       
         margin: 1rem;
         border-radius: 15px;       
     }
@@ -124,7 +124,7 @@ button{
       flex-direction:column;
       justify-content: center;
     }
-    .card-left , .card-middle , .card-right {       
+    .basic-plan , .professional-plan , .master-plan {       
         margin: 2rem;
         border-radius: 15px;       
     }
