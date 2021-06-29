@@ -7,16 +7,16 @@ function clickFunction() {
     let annualData = document.getElementsByTagName("h4");
 
     for (let index = 0; index < monthlyData.length; index++) {
+
             if (monthlyData[index].style.display === "none") {
                 monthlyData[index].style.display = "block";
                 annualData[index].style.display = "none";
-                button.style.justifyContent = "flex-end"
+                onClick.style.justifyContent = "flex-end"
             } else {
                 monthlyData[index].style.display = "none";
                 annualData[index].style.display = "block";
-                button.style.justifyContent = "flex-start"
+                onClick.style.justifyContent = "flex-start"
             }
     }
-
 
 }
