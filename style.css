@@ -5,7 +5,8 @@
 
  .container{
   background-color: hsl(240, 78%, 98%);
-   font-size: 15px;   
+   font-size: 15px;
+   font-family: "Montserrat", sans-serif;   
 }
 h1{
   text-align:center;
@@ -94,6 +95,7 @@ button{
     padding: 15px 0 15px 0;
     width: 80%;
     margin: 5px 0 5px 0;
+    font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
 }
