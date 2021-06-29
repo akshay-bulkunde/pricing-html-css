@@ -18,7 +18,7 @@ h1{
   align-items: center;
   color:hsl(234, 14%, 74%);
 }
-.toggle-bar{
+#toggle-bar{
   height:1rem;
   width:3.5rem;
   background-color:hsl(237, 63%, 64%);
@@ -27,7 +27,8 @@ h1{
   margin: 0 10px;
   display:flex;
   justify-content: flex-end;
-  align-items: center; 
+  align-items: center;
+  cursor: pointer;
 }
 .toggle-ball{
   height:1.3rem;
@@ -102,7 +103,7 @@ button{
     background: white;  
 }
 
-/* Media query for the window less than 375px */
+/* Media query for the window less than 375px - mobile version */
 
 @media only screen and (max-width: 375px) {
     .cards{
@@ -116,3 +117,15 @@ button{
     }
 }
 
+/* Media query for the window less than 768px - ipad  */
+@media only screen and (max-width: 768px) {
+    .cards{
+      display: flex;   
+      flex-direction:column;
+      justify-content: center;
+    }
+    .card-left , .card-middle , .card-right {       
+        margin: 2rem;
+        border-radius: 15px;       
+    }
+}
