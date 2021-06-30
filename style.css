@@ -79,7 +79,7 @@ hr {
   align-items: center;
   justify-content: center;
 }
-#upper-box > div > span {
+#title-box > div > span {
   padding: 0 1vw;
   color: hsl(234, 14%, 74%);
   font-size: 15px;
@@ -90,7 +90,7 @@ hr {
   color: hsl(232, 13%, 33%);
   padding: 1vw 0;
 }
-.symbol {
+.dollar-symbol {
   font-size: 1.5rem;
   color: hsl(232, 13%, 33%);
   padding: 1vw 0.5vw;
@@ -99,7 +99,7 @@ hr {
   color: white;
 }
 
-#upper-box div {
+#title-box div {
   font-size: 1.5rem;
   padding: 2vh 0;
 }
