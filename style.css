@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+/* * {
+    outline: 1px solid red !important;
+ } */
+
+ .container{
+  background-color: hsl(240, 78%, 98%);
+   font-size: 15px;
+   font-family: "Montserrat", sans-serif;   
+}
+h1{
+  text-align:center;
+  padding:1.5rem;
+  color:hsl(233, 13%, 49%);
+}
+.toggle{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  color:hsl(234, 14%, 74%);
+}
+#toggle-bar{
+  height:1rem;
+  width:3.5rem;
+  background-color:hsl(237, 63%, 64%);
+  border-radius:15px;
+  padding:0.5rem;
+  margin: 0 10px;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+  cursor: pointer;
+}
+.toggle-ball{
+  height:1.3rem;
+  width:1.3rem;
+  background-color:white;
+  border-radius:50%;
+}
+.monthly{
+  font-size: 3rem;  
+}
+.annually{
+  font-size: 3rem;
+  display:none;
+}
+.toggle-bar:hover {
+    opacity: 0.4;
+}
+p{
+  font-size:1.2em;  
+}
+.cards{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:3rem;
+  font-weight:bold;
+  color:hsl(232, 13%, 33%);
+}
+
+.basic-plan,.professional-plan,.master-plan{
+  background-color: white;
+  box-shadow: -1px 2px 20px 6px rgba(0,0,0,0.37);
+  width:100%;
+  padding:1.5rem;
+}
+.professional-plan:hover,.basic-plan:hover,.master-plan:hover{
+  background:linear-gradient(hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color:white;
+  padding:3.5rem 1.2rem;
+  border-radius:10px;
+}
+.basic-plan {
+   border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px
+}
+
+.master-plan{
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px
+}
+
+hr{
+    opacity: 0.3;
+}
+
+button{
+   border: 1px solid #949cea;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #a3a8f0,#696fdd);
+    color: white;
+    cursor: pointer;
+    padding: 15px 0 15px 0;
+    width: 80%;
+    margin: 5px 0 5px 0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.professional-plan button, .basic-plan button, .master-plan button {
+    color: hsl(237, 63%, 64%);
+    background: white;  
+}
+
+/* Media query for the window less than 375px - mobile version */
+
+@media only screen and (max-width: 375px) {
+    .cards{
+      display: flex;   
+      flex-direction:column;
+      justify-content: center;
+    }
+    .basic-plan , .professional-plan , .master-plan {       
+        margin: 1rem;
+        border-radius: 15px;       
+    }
+}
+
+/* Media query for the window less than 768px - ipad  */
+@media only screen and (max-width: 768px) {
+    .cards{
+      display: flex;   
+      flex-direction:column;
+      justify-content: center;
+    }
+    .basic-plan , .professional-plan , .master-plan {       
+        margin: 2rem;
+        border-radius: 15px;       
+    }
+}
