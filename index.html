@@ -8,6 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./styles.css">
+    <script src="./main.js"></script>
 </head>
 
 <body>
@@ -15,7 +16,7 @@
     <div class="parent">
         <div class="main">
             <h3 class="showcase">Our Pricing</h3>
-            <label class="toggle">
+            <!-- <label class="toggle">
                 <div class="switch">
                     <span class="font-text">Annually</span>
                     <div class="toggle-btn active" onclick="this.classList.toggle('active')">
@@ -24,31 +25,37 @@
                     </div>
                     <span class="font-text">Monthly</span>
                 </div>
+            </label> -->
+            <label class="toggle">
+                <span class="onoff">Annually</span>
+                <input type="checkbox" onclick="fun()">
+                <span class="slider round"></span>
+                <span class="onoff">Monthly</span>
             </label>
             <div class="container">
                 <div class="item1">
                     <h4 class="heading">Basics</h4>
-                    <h1 class="price">$199.99</h1>
+                    <h1 class="price" id="basicPrice">$199.99</h1>
                     <p class="font">500 GB Storage</p>
                     <p class="font">2 Users Allowed</p>
                     <p class="font">Send up to 3 GB</p>
-                    <button class="btn fontWhite">Learn More</button>
+                    <button class="btn">Learn More</button>
                 </div>
                 <div class="item2">
                     <h4 class="heading fontWhite">Professional</h4>
-                    <h1 class="price fontWhite">$249.99</h1>
+                    <h1 class="price fontWhite" id="professionalPrice">$249.99</h1>
                     <p class="font fontWhite">1 TB Storage</p>
                     <p class="font fontWhite">5 Users Allowed</p>
                     <p class="font fontWhite">Send up to 10 GB</p>
-                    <button class="btn backgroundwhite fontBlue">Learn More</button>
+                    <button class="btn2">Learn More</button>
                 </div>
                 <div class="item3">
                     <h4 class="heading">Master</h4>
-                    <h1 class="price">$399.99</h1>
+                    <h1 class="price" id="masterPrice">$399.99</h1>
                     <p class="font">2 TB Storage</p>
                     <p class="font">10 Users Allowed</p>
                     <p class="font">Send up to 20 GB</p>
-                    <button class="btn fontWhite">Learn More</button>
+                    <button class="btn">Learn More</button>
                 </div>
             </div>
         </div>
