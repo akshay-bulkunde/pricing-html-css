@@ -1,35 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Montserrat">
+  <title>Pricing component</title>
+</head>
 
-    <title>Pricing component</title>
+<body>
+  <div class="cards">
+    <div class="mainHeading">
+      <div class="heading">Our Pricing</div>
+      <div class="container">
+        <label for="toggle" class="label1">Annually</label>
+        <input type="checkbox" class="toggle">
+        <label for="toggle" class="label2">Monthly</label>
+      </div>
+    </div>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
-  </head>
-  <body>
-    Our Pricing Annually Monthly Basic &dollar;19.99 &dollar;199.99 500 GB
-    Storage 2 Users Allowed Send up to 3 GB Learn More Professional
-    &dollar;24.99 &dollar;249.99 1 TB Storage 5 Users Allowed Send up to 10 GB
-    Learn More Master &dollar;39.99 &dollar;399.99 2 TB Storage 10 Users Allowed
-    Send up to 20 GB Learn More
-  </body>
+    <div class="plans">
+      <div class="basic-plan" class="sider">
+        <div class="plan-type">Basic</div>
+        <div class="pricing">
+          <div class="dollar">$</div>
+          <div class="pricingValue" id="1">19.99</div>
+        </div>
+        <hr>
+        <div>500 GB Storage</div>
+        <hr>
+        <div>2 Users Allowed</div>
+        <hr>
+        <div>Send up to 3 GB</div>
+        <hr>
+        <div class="button"><button class="backgroundBlue">LEARN MORE</button></div>
+      </div>
+
+      <div class="professional-plan">
+        <div class="plan-type">Professional</div>
+        <div class="pricing">
+          <div class="dollar">$</div>
+          <div class="pricingValue" id="2">24.99</div>
+        </div>
+        <hr>
+        <div>1 TB Storage</div>
+        <hr>
+        <div>5 Users Allowed</div>
+        <hr>
+        <div>Send up to 10 GB</div>
+        <hr>
+        <div class="button"><button class="backgroundWhite">LEARN MORE</button></div>
+      </div>
+
+      <div class="master-plan" class="sider">
+        <div class="plan-type">Master</div>
+        <div class="pricing">
+          <div class="dollar">$</div>
+          <div class="pricingValue">39.99</div>
+        </div>
+        <hr>
+        <div>2 TB Storage</div>
+        <hr>
+        <div>10 Users Allowed</div>
+        <hr>
+        <div>Send up to 20 GB</div>
+        <hr>
+        <div class="button"><button class="backgroundBlue">LEARN MORE</button></div>
+      </div>
+    </div>
+  </div>
+
+
+  <link rel="stylesheet" href="styles.css">
+</body>
+
 </html>
