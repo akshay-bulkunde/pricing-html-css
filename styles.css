@@ -1,0 +1,147 @@
+ *{
+    margin: 0;
+    padding: 0;
+ }
+  body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+  }
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('./images/bg-top.svg'), url('./images/bg-bottom.svg');
+    background-position: top right, bottom left;
+    background-repeat: no-repeat;
+    background-size: 25%, 20%;
+    background-color: hsl(240, 78%, 98%);
+    color: hsl(232, 13%, 33%);
+}
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+.mainHeading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+}
+.heading {
+    font-size: 35px;
+    font-family: Montserrat;
+    font-weight: 700;
+    color: hsl(233, 13%, 49%);
+}
+.container {
+    margin-top: 40px;
+}
+.professional-plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 300px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.13);
+    background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    color: white;
+    font-weight: 700;
+}
+.basic-plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.13);
+    font-weight: 700;
+
+}
+.master-plan{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 350px;
+    width: 250px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.13);
+    font-weight: 700;
+}
+/* .plans hr {
+    width: 70%;
+} */
+.plans .pricing {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plans .pricingValue {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+.plans .dollar {
+    font-size: 2rem;
+    margin-right: 8px;
+    font-weight: 700;
+}
+.plans .button .backgroundBlue{
+    background: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    border: none;
+    border-radius: 5px;
+    font-family: Montserrat;
+    color: white;
+    padding: 10px 40px;
+}
+.plans .button .backgroundWhite{
+    background:white;
+    color: hsl(237, 63%, 64%);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 50px;
+    font-family: Montserrat;
+}
+.toggle {
+    appearance: none;
+    cursor: pointer;
+    width: 50px;
+    height: 26px;
+    background-color: hsl(228, 45%, 44%);
+    border-radius: 13px;
+    position: relative;
+}
+.toggle::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 3px;
+    left: 3px;
+    background-color: white;
+    transition: transform 0.2s;
+}
+.toggle:checked::before {
+    transform: translateX(24px);
+ }
+ 
+
+
+
+
