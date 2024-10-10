@@ -1,4 +1,5 @@
- *{
+*{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
  }
@@ -9,20 +10,24 @@
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
+    background: hsl(233, 19%, 92%);
+    
+    
   }
 .cards {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
+    width: 75vw;
+    height: 80vh;
     background-image: url('./images/bg-top.svg'), url('./images/bg-bottom.svg');
     background-position: top right, bottom left;
     background-repeat: no-repeat;
     background-size: 25%, 20%;
     background-color: hsl(240, 78%, 98%);
     color: hsl(232, 13%, 33%);
+    overflow-y:auto;
 }
 .plans {
     display: flex;
@@ -39,7 +44,7 @@
     margin-top: 70px;
 }
 .heading {
-    font-size: 35px;
+    font-size: 45px;
     font-family: Montserrat;
     font-weight: 700;
     color: hsl(233, 13%, 49%);
@@ -141,7 +146,59 @@
     transform: translateX(24px);
  }
  
+ @media (max-width: 1074px){
+    .cards .mainHeading {
+        display: flex;
+        flex-direction: column;
+     }
+     .heading {
+         margin-top: 530px;
+     }
+     .cards .plans {
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+         margin-bottom: 20px;
+ 
+     }
+ }
+ 
+@media (max-width: 845px) {
+   
+    .cards .mainHeading {
+       display: flex;
+       flex-direction: column;
+    }
+    .heading {
+        margin-top: 540px;
+    }
+    .cards .plans {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 20px;
+
+    }
+}
 
 
+@media (max-width: 480px) {
 
+    .cards .mainHeading {
+        display: flex;
+        flex-direction: column;
+    }
+    .mainHeading .heading {
+        margin-top: 570px;
+    }
+   
 
+    /* .plans .pricingValue {
+        font-size: 2.5rem; 
+    } */
+
+    .plans .button .backgroundBlue,
+    .plans .button .backgroundWhite {
+        padding: 8px 30px; 
+    }
+}
