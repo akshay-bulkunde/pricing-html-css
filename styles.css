@@ -12,25 +12,28 @@ body {
     justify-content: center;
     align-items: center;
     background: hsl(233, 19%, 92%);
-
-
+    background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right, top left;
+    background-size: 30% auto, 30% auto;
 }
+
 .circle-container {
     position: absolute;
-    bottom: 0px; 
+    bottom: 0px;
     left: 200px;
     display: flex;
-    flex-wrap: wrap; 
-    width: 160px; 
-  }
-  
-  .circle {
+    flex-wrap: wrap;
+    width: 160px;
+}
+
+.circle {
     width: 15px;
     height: 15px;
-    background-color: skyblue; 
-    border-radius: 50%; 
-    margin: 5px; 
-  }
+    background-color: skyblue;
+    border-radius: 50%;
+    margin: 5px;
+}
 
 .cards {
     display: flex;
@@ -114,9 +117,6 @@ body {
     font-weight: 700;
 }
 
-/* .plans hr {
-    width: 70%;
-} */
 .plans .pricing {
     border: none;
     display: flex;
@@ -195,6 +195,7 @@ body {
         gap: 20px;
         margin-bottom: 20px;
     }
+
     .circle-container {
         display: none;
     }
@@ -218,6 +219,7 @@ body {
         margin-bottom: 20px;
 
     }
+
     .circle-container {
         display: none;
     }
@@ -239,6 +241,7 @@ body {
     .plans .button .backgroundWhite {
         padding: 8px 30px;
     }
+
     .circle-container {
         display: none;
     }
